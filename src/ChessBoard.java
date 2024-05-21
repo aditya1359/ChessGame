@@ -107,7 +107,8 @@ public class ChessBoard {
             for (Box box : row) {
                 Piece piece = box.getPiece();
                 if (piece != null && !piece.isWhite()==(isWhite)) {
-                    List<Move> moves = piece.getLegalMoves(this);
+                 //   List<Move> moves = piece.getLegalMoves(this);
+                    List<Move> moves = new ArrayList<>();
                     for (Move move : moves) {
                         if (move.getEnd().getX() == x && move.getEnd().getY() == y) {
                             return true;
