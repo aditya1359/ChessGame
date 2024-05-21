@@ -1,0 +1,11 @@
+public enum GameStatus {
+
+    ACTIVE,
+    BLACKWIN,
+    WHITEWIN,
+    STALEMATE,
+    NOSHOW,
+    RESIGNATION,
+    DRAW_INSUFFICIENT_MATERIAL
+
+}
